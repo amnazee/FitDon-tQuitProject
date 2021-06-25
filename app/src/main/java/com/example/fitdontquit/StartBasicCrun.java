@@ -14,13 +14,14 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class StartWorkout extends AppCompatActivity {
+public class StartBasicCrun extends AppCompatActivity {
+
     ImageView imgTimer;
     TextView timerValue;
     View view;
     private static final long START_TIME_IN_MILLIS = 50000;
     public CountDownTimer countDownTimer;
-   public boolean mTimerRunning;
+    public boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
     Animation alpha;
 

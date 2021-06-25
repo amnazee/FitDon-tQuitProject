@@ -18,25 +18,22 @@
         app:title="FitDon'tQuit"
         app:titleTextColor="@color/black"
         tools:ignore="MissingConstraints" />
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
        android:layout_weight="1.0"
-       android:orientation="vertical"
-       >
-
+       android:orientation="vertical">
        <ScrollView
            android:layout_width="fill_parent"
            android:layout_height="fill_parent"
            android:layout_weight="1.0"
            android:scrollbars="none">
-
            <LinearLayout
                android:layout_width="fill_parent"
                android:layout_height="fill_parent"
                android:orientation="vertical">
                <LinearLayout
+                   android:onClick="buttonMountain"
                    android:layout_width="fill_parent"
                    android:layout_height="100dp"
                    android:layout_gravity="center"
@@ -47,21 +44,17 @@
 
 
                    <LinearLayout
-                       android:id="@+id/b_pose"
+                       android:id="@+id/mountain_pose"
                        android:layout_width="fill_parent"
                        android:layout_height="wrap_content"
                        android:layout_margin="10dp"
-                       android:orientation="horizontal"
-
-                       >
-
+                       android:orientation="horizontal">
                        <LinearLayout
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
                            android:layout_margin="10dp"
                            android:layout_weight="1.0"
-                           android:orientation="vertical"
-                           >
+                           android:orientation="vertical">
                            <TextView
                                android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
@@ -71,42 +64,33 @@
                                android:textColor="#FF000000"
                                android:textSize="15dp"
                                android:textStyle="bold"/>
-
                            <TextView
                                android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
                                android:text="Repeat Twice "
-                               android:textStyle="bold"
-                               />
+                               android:textStyle="bold" />
                            <TextView
                                android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
                                android:text="01:00 MIN"
                                android:textColor="#C1BEBE"
-                               android:textStyle="bold"
-                               />
+                               android:textStyle="bold"/>
                        </LinearLayout>
                        <LinearLayout
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
-                           android:layout_weight="2.0"
-                           >
+                           android:layout_weight="2.0">
                            <pl.droidsonroids.gif.GifImageView
-                               android:onClick="ButtonClicked"
                                android:layout_width="fill_parent"
                                android:layout_height="wrap_content"
-                               android:src="@drawable/exersice_1"
-                               />
+                               android:src="@drawable/exersice_1" />
                        </LinearLayout>
-
                        <LinearLayout
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:layout_gravity="center"
                            android:gravity="center"
-                           android:layout_weight="0"
-                           >
-
+                           android:layout_weight="0">
                            <ImageView
                                android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
@@ -121,6 +105,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="buttonBasicCrun"
                    android:layout_width="fill_parent"
                    android:layout_height="100dp"
                    android:layout_gravity="center"
@@ -202,6 +187,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="buttonBenchDips"
                    android:layout_width="match_parent"
                    android:layout_height="94dp"
                    android:layout_gravity="center"
@@ -278,6 +264,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="buttonBicycle"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -361,6 +348,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="LegRaise"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -442,6 +430,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="AlternativeHeelTouch"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -525,6 +514,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="LegUpCrunches"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -608,6 +598,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="SitUp"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -691,6 +682,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="vUps"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -772,6 +764,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="PlankRotation"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                    android:layout_margin="5dp"
@@ -855,6 +848,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="PlankLeftLeg"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -936,6 +930,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="RussianTwist"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -1019,6 +1014,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="Bridge"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -1100,6 +1096,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="Vertica"
                android:layout_width="fill_parent"
                android:layout_height="100dp"
                android:layout_gravity="center"
@@ -1181,6 +1178,7 @@
                    android:layout_height="1.0dp"
                    android:background="#ffaaa9a9"/>
                <LinearLayout
+                   android:onClick="WindMill"
                    android:layout_width="fill_parent"
                    android:layout_height="100dp"
                    android:layout_gravity="center"
@@ -1260,7 +1258,6 @@
 
                </LinearLayout>
            </LinearLayout>
-
        </ScrollView>
    </LinearLayout>
 
