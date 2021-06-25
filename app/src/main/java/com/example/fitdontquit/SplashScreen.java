@@ -10,13 +10,15 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity
+{
     TextView textView;
     ImageView imageView;
     Animation up,down;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         imageView=findViewById(R.id.imSplash);
@@ -25,9 +27,11 @@ public class SplashScreen extends AppCompatActivity {
         down= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down);
         imageView.setAnimation(up);
         textView.setAnimation(down);
-        new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable()
+        {
             @Override
-            public void run() {
+            public void run()
+            {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
             }
