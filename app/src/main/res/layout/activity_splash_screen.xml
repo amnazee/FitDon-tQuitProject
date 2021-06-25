@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreen"
+    android:background="#78909C">
 
     <ImageView
         android:id="@+id/imSplash"
@@ -22,15 +23,16 @@
 
     <TextView
         android:id="@+id/txtNameSplash"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="FitDon'tQuit"
         android:textSize="35dp"
+        android:textAlignment="center"
+        android:background="@drawable/button"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor=""
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp" />
-
 
 </RelativeLayout>
