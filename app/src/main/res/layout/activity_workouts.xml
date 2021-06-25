@@ -15,7 +15,7 @@
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="FitDon'tQuit"
-        app:titleTextColor=""
+        app:titleTextColor="@color/black"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -46,7 +46,6 @@
 
 
                    <LinearLayout
-                       android:onClick="ImageButtonClicked"
                        android:id="@+id/b_pose"
                        android:layout_width="fill_parent"
                        android:layout_height="wrap_content"
@@ -129,7 +128,6 @@
 
 
                    <LinearLayout
-                       android:onClick="ImageButtonClicked"
                        android:layout_width="fill_parent"
                        android:layout_height="wrap_content"
                        android:layout_margin="10dp"
@@ -209,7 +207,6 @@
                    android:orientation="vertical">
 
                    <LinearLayout
-                       android:onClick="ImageButtonClicked"
                        android:layout_width="fill_parent"
                        android:layout_height="wrap_content"
                        android:layout_margin="10dp"
@@ -289,7 +286,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -371,13 +367,10 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
-                   android:orientation="horizontal"
-
-                   >
+                   android:orientation="horizontal">
 
                    <LinearLayout
                        android:layout_width="fill_parent"
@@ -453,7 +446,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -535,7 +527,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -617,7 +608,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -699,13 +689,10 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
-                   android:orientation="horizontal"
-
-                   >
+                   android:orientation="horizontal">
 
                    <LinearLayout
                        android:layout_width="fill_parent"
@@ -781,7 +768,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -863,13 +849,10 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
-                   android:orientation="horizontal"
-
-                   >
+                   android:orientation="horizontal">
 
                    <LinearLayout
                        android:layout_width="fill_parent"
@@ -945,7 +928,6 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
@@ -1027,13 +1009,10 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
-                   android:orientation="horizontal"
-
-                   >
+                   android:orientation="horizontal">
 
                    <LinearLayout
                        android:layout_width="fill_parent"
@@ -1109,13 +1088,10 @@
 
 
                <LinearLayout
-                   android:onClick="ImageButtonClicked"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10dp"
-                   android:orientation="horizontal"
-
-                   >
+                   android:orientation="horizontal">
 
                    <LinearLayout
                        android:layout_width="fill_parent"
@@ -1191,7 +1167,6 @@
 
 
                    <LinearLayout
-                       android:onClick="ImageButtonClicked"
                        android:layout_width="fill_parent"
                        android:layout_height="wrap_content"
                        android:layout_margin="10dp"

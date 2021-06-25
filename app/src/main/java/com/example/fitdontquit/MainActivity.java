@@ -23,7 +23,7 @@ Button btn_gym;
         btn_gym.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,HomeScreen.class);
+                Intent intent=new Intent(MainActivity.this,WorkoutsActivity.class);
                 startActivity(intent);
             }
         });
