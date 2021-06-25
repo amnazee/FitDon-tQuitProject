@@ -45,11 +45,14 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="horizontal"
+android:layout_margin="10dp"
+    android:weightSum="3"
     >
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_weight="1">
     <TextView
         android:textStyle="bold"
         android:padding="5dp"
@@ -75,20 +78,168 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Duration: 15 min daily"
-        android:textColor="#651A06"
+        android:textColor="#7C0D05"
         android:textSize="20sp"
         android:fontFamily="sans-serif-condensed"
         />
 </LinearLayout>
 
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    >
+<pl.droidsonroids.gif.GifImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:src="@drawable/exersice_7"/>
 </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_weight="0.0">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:padding="15dp"
+            android:src="@drawable/arrow"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button"
+android:text="Get Started"
+                    android:textSize="15dp"
+                    android:textColor="#A44EB3"
+              android:textStyle="normal" />
+            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/bgitemcolor"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Above 18"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-black"
+                        />
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Days: 60"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration: 15 min daily"
+                        android:textColor="#7C0D05"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    >
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/exersice_7"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:src="@drawable/arrow"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button"
+                    android:text="Get Started"
+                    android:textSize="15dp"
+                    android:textColor="#A44EB3"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bgitemcolor"
+        >
+
+    </LinearLayout>
+
 
 
 
     </LinearLayout>
+
 </ScrollView>
 
 </LinearLayout>
