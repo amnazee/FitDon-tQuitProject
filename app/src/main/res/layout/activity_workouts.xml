@@ -16,7 +16,6 @@
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="FitDon'tQuit"
-        android:background="@drawable/color"
         app:titleTextColor="@color/black"
         tools:ignore="MissingConstraints" />
 
