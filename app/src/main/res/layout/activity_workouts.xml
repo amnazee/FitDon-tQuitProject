@@ -875,7 +875,6 @@
                        android:layout_margin="10dp"
                        android:layout_weight="1.0"
                        android:orientation="vertical"
-                       android:background="#78909C"
                        >
                        <TextView
                            android:layout_width="wrap_content"
