@@ -92,6 +92,7 @@
                            android:layout_weight="2.0"
                            >
                            <pl.droidsonroids.gif.GifImageView
+                               android:onClick="ButtonClicked"
                                android:layout_width="fill_parent"
                                android:layout_height="wrap_content"
                                android:src="@drawable/exersice_1"

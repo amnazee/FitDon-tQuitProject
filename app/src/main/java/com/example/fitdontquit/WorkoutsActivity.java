@@ -2,7 +2,9 @@ package com.example.fitdontquit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class WorkoutsActivity extends AppCompatActivity {
     @Override
@@ -12,8 +14,9 @@ public class WorkoutsActivity extends AppCompatActivity {
         getSupportActionBar().hide();
     }
 
-//    public void ImageButtonClicked(View view)
-//    {
-//
-//    }
+    public void ButtonClicked(View view)
+    {
+        Intent i=new Intent(getApplicationContext(),StartWorkout.class);
+        startActivity(i);
+    }
 }

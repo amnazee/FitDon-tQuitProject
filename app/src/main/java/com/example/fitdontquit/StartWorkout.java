@@ -16,20 +16,22 @@ public class StartWorkout extends AppCompatActivity {
     ImageView imgTimer;
     TextView timerValue;
     private static final long START_TIME_IN_MILLIS = 50000;
-    private CountDownTimer countDownTimer;
-    private boolean mTimerRunning;
+    public CountDownTimer countDownTimer;
+   public boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
-    Animation alphago;
+    Animation alpha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_workout);
+        getSupportActionBar().hide();
         imgTimer = (ImageView) findViewById(R.id.imgtimer);
         timerValue = (TextView) findViewById(R.id.timerValue);
-        timerValue.startAnimation(alphago);
-        imgTimer.startAnimation(alphago);
-        alphago = AnimationUtils.loadAnimation(this, R.anim.alphago);
+        alpha = AnimationUtils.loadAnimation(this, R.anim.alphago);
+        timerValue.startAnimation(alpha);
+        imgTimer.startAnimation(alpha);
+
 
         startTimer();
     }
