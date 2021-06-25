@@ -2,8 +2,10 @@ package com.example.fitdontquit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -15,6 +17,7 @@ import java.util.Locale;
 public class StartWorkout extends AppCompatActivity {
     ImageView imgTimer;
     TextView timerValue;
+    View view;
     private static final long START_TIME_IN_MILLIS = 50000;
     public CountDownTimer countDownTimer;
    public boolean mTimerRunning;
@@ -26,14 +29,21 @@ public class StartWorkout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_workout);
         getSupportActionBar().hide();
+        view=findViewById(R.id.bgprogress);
         imgTimer = (ImageView) findViewById(R.id.imgtimer);
         timerValue = (TextView) findViewById(R.id.timerValue);
         alpha = AnimationUtils.loadAnimation(this, R.anim.alphago);
         timerValue.startAnimation(alpha);
         imgTimer.startAnimation(alpha);
-
-
         startTimer();
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),WorkoutsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void startTimer(){
