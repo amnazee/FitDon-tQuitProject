@@ -17,11 +17,11 @@
         app:title="Fit Don't Quit"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         />
-<ScrollView
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
-    >
+    android:scrollbars="none">
+
     <LinearLayout
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
